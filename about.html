@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="nav-list"></div>
+    <!-- Navigation Bar -->
+<nav>
+    <!-- Sidebar -->
+    <ul class="sidebar">
+        <!-- Close Button (X) -->
+        <li onclick="hideSidebar()">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </a>
+        </li>
+        <!-- Sidebar Links -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <!-- Main Navigation -->
+    <ul>
+        <li class="hideOnMobile"><a href="home.html">Home</a></li>
+        <li  class="hideOnMobile"><a href="about.html">About Me</a></li>
+        <li  class="hideOnMobile"><a href="projects.html">Projects</a></li>
+        <li  class="hideOnMobile"><a href="education.html">Education</a></li>
+        <li  class="hideOnMobile"><a href="contact.html">Contact Me</a></li>
+        <li  class="hideOnMobile"><a href="skills.html">Skills</a></li>
+        <!-- Hamburger Menu (To Show Sidebar) -->
+        <li class="menu-button" onclick="showSidebar()" >
+            <a href="#" style="background-color: antiquewhite;" >
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f" >
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+         <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="my photo.png" alt="DebraJoy">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hello! I'm DebraJoy, I'm passionate about technology, especially mobile app development and fitness tracking solutions. I love building user-friendly applications that enhance people's lives, particularly in health and wellness. Currently, I'm focused on integrating Health Connect into my fitness tracker app to help users monitor their calorie intake and overall progress. I enjoy working with Flutter and Jetpack Compose, always striving to improve my skills and stay updated with the latest tech trends. My goal is to create seamless, data-driven applications that provide valuable insights to users while maintaining a great user experience. Beyond coding, I'm excited about how technology can bridge gaps in health, fitness, and productivity. I believe that smart integrations and thoughtful design can make a real impact on people's daily routines.</p>
+                 
+                <a href="DEBRAJOY KITET RESUME.pdf" class="download-btn">My CV</a>
+            </div>
+           
+        </div>
+        
+    </section>
+
+    <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display ='flex';
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display ='none';
+    }
+</script> 
+
+</body>
+</html>
