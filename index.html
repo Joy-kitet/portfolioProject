@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <style>
         .material-symbols-outlined {
@@ -75,14 +78,22 @@
         </div>
     </section>
 <script>
-    function showSidebar(){
+    function showSidebar() {
         const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display ='flex';
+        sidebar.style.display = 'flex';
+        setTimeout(() => {
+            sidebar.classList.add('active');
+        }, 10);
     }
-    function hideSidebar(){
+    
+    function hideSidebar() {
         const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display ='none';
+        sidebar.classList.remove('active');
+        setTimeout(() => {
+            sidebar.style.display = 'none';
+        }, 300);
     }
 </script>
+<script src="script.js"></script>
 </body>
 </html>
